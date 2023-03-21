@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #050505;
+}
+
+ul,ol,a{
+    list-style: none;
+    text-decoration: none;
+}
