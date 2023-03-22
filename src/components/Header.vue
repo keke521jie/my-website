@@ -1,12 +1,13 @@
 <template>
     <header>
         <div class="header-container">
-            <div class="left"><a href="">yuanjie</a></div>
+            <div class="left"><router-link to="/">yuanjie</router-link></div>
             <ul class="right">
-                <li class="active"><a href="">博客</a></li>
-                <li><a href="">文章</a></li>
-                <li><a href="">音乐</a></li>
-                <li><a class="iconfont icon-github" style="font-size: 20px;" href=""></a></li>
+                <li><router-link active-class="active" to="/blog">博客</router-link></li>
+                <li><router-link active-class="active" to="/article">文章</router-link></li>
+                <li><router-link active-class="active" to="/music">音乐</router-link></li>
+                <li><router-link active-class="active" class="iconfont icon-github" style="font-size: 20px;" to=""></router-link>
+                </li>
             </ul>
         </div>
     </header>
@@ -60,6 +61,11 @@ header {
                     text-decoration: none;
                     color: #7c7e80;
                     transition: color .4s;
+
+                }
+
+                a.active {
+                    color: #fff;
                 }
 
                 &:hover a {
@@ -67,9 +73,7 @@ header {
                 }
             }
 
-            li.active a {
-                color: #fff;
-            }
+
         }
     }
 }
