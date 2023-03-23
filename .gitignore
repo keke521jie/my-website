@@ -11,8 +11,6 @@ node_modules
 .DS_Store
 dist-ssr
 coverage
-src
-public
 *.local
 
 /cypress/videos/
@@ -26,8 +24,4 @@ public
 *.ntvs*
 *.njsproj
 *.sln
-*.html
-*.md
-*.json
-*.js
 *.sw?
