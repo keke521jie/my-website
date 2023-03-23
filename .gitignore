@@ -9,9 +9,10 @@ lerna-debug.log*
 
 node_modules
 .DS_Store
-dist
 dist-ssr
 coverage
+src
+public
 *.local
 
 /cypress/videos/
@@ -25,4 +26,8 @@ coverage
 *.ntvs*
 *.njsproj
 *.sln
+*.html
+*.md
+*.json
+*.js
 *.sw?
