@@ -4,7 +4,7 @@
     <router-view></router-view>
   </main>
   <Audio />
-  <Footer />
+  <!-- <Footer />  -->
 </template>
 
 <script setup>
@@ -19,5 +19,12 @@ main {
   width: 1200px;
   margin: 0 auto;
   color: #fff;
+}
+
+@media screen and (max-width: 375px){
+  main{
+    padding: 30px 20px;
+    width: auto;
+  }
 }
 </style>

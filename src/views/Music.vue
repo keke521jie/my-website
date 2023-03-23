@@ -47,7 +47,7 @@
                     <i class="iconfont icon-bofang"></i>
                 </div>
             </li>
-           
+
 
         </ul>
     </div>
@@ -81,6 +81,7 @@ const playMusic = () => {
             margin-bottom: 30px;
             cursor: pointer;
             transition: color .4s;
+
             .music-name {
                 font-size: 25px;
                 margin-right: 10px;
@@ -92,15 +93,39 @@ const playMusic = () => {
                 margin-left: 3px;
             }
 
-            .right{
-                i{
+            .right {
+                i {
                     font-size: 35px;
                 }
             }
 
-            &:hover{
+            &:hover {
                 color: #fff;
             }
         }
     }
-}</style>
+}
+
+@media screen and (max-width: 375px) {
+    .music {
+        .music-list {
+            .music-item {
+                .music-name {
+                    font-size: 22px;
+                }
+
+                .singer {
+                    font-size: 13px;
+                    margin-left: 3px;
+                }
+
+                .right {
+                    i {
+                        font-size: 25px;
+                    }
+                }
+            }
+        }
+    }
+}
+</style>

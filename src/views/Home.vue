@@ -45,4 +45,11 @@
         }
     }
 }
+
+
+@media screen and (max-width: 375px){
+    h1{
+        font-size: 22px;
+    }
+}
 </style>

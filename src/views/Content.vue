@@ -9,7 +9,6 @@
         </section>
         <pre>
             import { build } from 'vite'
-
             async function buildSSREntry() {
                 await build({
                     ssr: true,
@@ -53,6 +52,20 @@
 
     code {
         padding: 20px 60px;
+    }
+}
+
+
+@media screen and (max-width: 375px) {
+    .content{
+        h1{
+            font-size: 22px;
+        }
+        pre,
+        code{
+            padding: 10px;
+            overflow: auto;
+        }
     }
 }
 </style>

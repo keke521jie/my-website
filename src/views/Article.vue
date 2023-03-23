@@ -52,6 +52,7 @@
 .blog {
     li {
         margin-bottom: 30px;
+
         a {
             color: #939393;
             font-weight: 600;
@@ -75,6 +76,18 @@
 
                 .date {
                     color: #7c7c7c;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .blog {
+        li {
+            a {
+                .title {
+                    font-size: 20px;
                 }
             }
         }
