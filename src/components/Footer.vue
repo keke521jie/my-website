@@ -15,4 +15,10 @@ footer {
     text-align: center;
     margin:  0 auto;
 }
+
+@media screen and (max-width: 1000px) {
+    footer{
+        width: auto;
+    }
+}
 </style>

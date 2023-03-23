@@ -82,7 +82,7 @@
     }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 1000px) {
     .blog {
         li {
             a {

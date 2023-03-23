@@ -47,7 +47,7 @@
 }
 
 
-@media screen and (max-width: 375px){
+@media screen and (max-width: 1000px){
     h1{
         font-size: 22px;
     }

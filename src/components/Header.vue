@@ -83,7 +83,7 @@ header {
     }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 1000px) {
     header {
         .header-container {
             width: auto;
