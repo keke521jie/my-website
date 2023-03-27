@@ -1,0 +1,1 @@
+.blog li{margin-bottom:30px}.blog li a{color:#939393;font-weight:600}.blog li a .title{font-size:25px;margin-bottom:5px;transition:all .4s}.blog li a .date{font-size:15px;color:#3f3f3f;transition:all .4s}.blog li a:hover .title{color:#fefefe}.blog li a:hover .date{color:#7c7c7c}@media screen and (max-width: 1000px){.blog li a .title{font-size:20px}}
