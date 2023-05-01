@@ -1,6 +1,13 @@
 <template>
     <div v-highlight class="content">
-        <h1>我是文章标题</h1>
+        <div v-html="content"></div>
+    </div>
+</template>
+
+<script setup>
+import { ref } from 'vue';
+
+    const content = ref(`<h1>我是文章标题</h1>
         <section>
             本人热情随和，活波开朗，具有进取精神和团队精神<a href="#">我爱你</a>，有较强的动手能力。良好协调沟通能力，适应力强，反应快、积极、细心、灵活， 具有一定的社会交往能力。
 
@@ -15,12 +22,7 @@
                     // config for Vite
                 })
             }
-        </pre>
-    </div>
-</template>
-
-<script setup>
-
+        </pre>`)
 </script>
 
 <style lang="scss">

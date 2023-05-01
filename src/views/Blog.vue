@@ -1,45 +1,32 @@
 <template>
     <ul class="blog">
-        <li>
+        <li v-for="blog in blogList" :key="blog.id">
             <router-link to="">
-                <p class="title">说JavaScript的闭包</p>
-                <p class="date">2000,09,05</p>
-            </router-link>
-        </li>
-        <li>
-            <router-link to="">
-                <p class="title">说JavaScript的闭包</p>
-                <p class="date">2000,09,05</p>
-            </router-link>
-        </li>
-        <li>
-            <router-link to="">
-                <p class="title">说JavaScript的闭包</p>
-                <p class="date">2000,09,05</p>
-            </router-link>
-        </li>
-        <li>
-            <router-link to="">
-                <p class="title">说JavaScript的闭包</p>
-                <p class="date">2000,09,05</p>
-            </router-link>
-        </li>
-        <li>
-            <router-link to="">
-                <p class="title">说JavaScript的闭包</p>
-                <p class="date">2000,09,05</p>
-            </router-link>
-        </li>
-        <li>
-            <router-link to="">
-                <p class="title">说JavaScript的闭包</p>
-                <p class="date">2000,09,05</p>
+                <p class="title">{{ blog.title }}</p>
+                <p class="date">{{blog.date}}</p>
             </router-link>
         </li>
     </ul>
 </template>
 
 <script setup>
+import { onMounted, reactive } from 'vue';
+import API from '@/api'
+let blogList = reactive([])
+const getBlogList = async () => {
+    let result = await API.getBlogList()
+    if (result.status === 0) {
+        blogList = result.data
+        blogList.forEach(item => {
+            const dateArr = item.date.slice(0, 10).split('-')
+            item.date = `${dateArr[0]},${dateArr[1]},${dateArr[2]}`
+        })
+    }
+    console.log(blogList);
+}
+onMounted(() => {
+    getBlogList()
+})
 </script>
 
 <style lang="scss">
